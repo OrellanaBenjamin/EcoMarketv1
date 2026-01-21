@@ -14,22 +14,31 @@
     <!-- Barra de Navegacion -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="assets/Logo-Claro.png" style="width: 150px;" alt=""></a>
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/Logo-Claro.png" style="width: 150px;" alt="">
+        </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="Home.html"><i class="fa-regular fa-house"></i>Home</a>
+              <a class="nav-link active" href="Home.html">
+                <i class="fa-regular fa-house"></i> Home
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="Catalogo.html"><i
-                  class="fa-brands fa-envira"></i>Catalogo</a>
+              <a class="nav-link" href="Catalogo.html">
+                <i class="fa-brands fa-envira"></i> Catalogo
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Nosotros.html"><i class="fa-solid fa-user-group"></i>Nosotros</a>
+              <a class="nav-link" href="Nosotros.html">
+                <i class="fa-solid fa-user-group"></i> Nosotros
+              </a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
@@ -41,14 +50,26 @@
               </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
+          <div class="d-flex align-items-center gap-3 text-white">
+            <a href="Carrito.html" class="nav-link position-relative">
+              <i class="fa-solid fa-cart-shopping fs-5"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">0
+              </span>
+            </a>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+
+          </div>
         </div>
       </div>
     </nav>
   </header>
+
 
   <main>
     <!-- Carrusel -->
@@ -188,7 +209,8 @@
     <br><br>
     <!--Boton Ver Mas-->
     <div class="d-grid gap-2 col-6 mx-auto">
-      <a href="Catalogo.html" class="btn btn-outline-success"><i class="fa-solid fa-bars"></i> Ver más productos</button></a>
+      <a href="Catalogo.html" class="btn btn-outline-success"><i class="fa-solid fa-bars"></i> Ver más
+        productos</button></a>
     </div>
     <br><br>
 
@@ -203,7 +225,8 @@
           <img class="rounded" src="assets/Productos-nat.png" alt="" style="width: 100%;">
         </div>
         <div class="col-xl-6">
-          <p><strong> EcoMarket</strong>  Esta dedicada a la venta de productos naturales, ecológicos y sustentables para el hogar y el cuidado personal.</p>
+          <p><strong> EcoMarket</strong> Esta dedicada a la venta de productos naturales, ecológicos y sustentables para
+            el hogar y el cuidado personal.</p>
           <ul>
             <li>Apoyamos a productores de nuestras marcas naturales y ecologicas</li>
             <li>Promovemos prácticas sustentables, con envases reciclables y transporte eficiente para reducir la huella
@@ -213,7 +236,8 @@
           </ul>
           <br><br>
           <div class="d-grid gap-2 col-6 mx-auto">
-            <a href="Nosotros.html" class="btn btn-outline-success"><i class="fa-solid fa-users"></i> Conoce Más Sobre Nosotros</button></a>
+            <a href="Nosotros.html" class="btn btn-outline-success"><i class="fa-solid fa-users"></i> Conoce Más Sobre
+              Nosotros</button></a>
           </div>
         </div>
       </div>
@@ -233,7 +257,7 @@
       </div>
     </div>
   </footer>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
