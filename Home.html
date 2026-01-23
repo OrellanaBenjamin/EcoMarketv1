@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="Home.html">
-          <img src="assets/Logo-Oscuro.png" style="width: 150px;" alt="">
+          <img src="v" style="width: 150px;" alt="">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -25,48 +25,57 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-none mb-2 mb-lg-0 ikons">
-            <li class="nav-item" >
-              <a class="nav-link active" href="Home.html">
-                <i class="fa-regular fa-house"></i> Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Catalogo.html">
-                <i class="fa-brands fa-envira"></i> Catalogo
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Nosotros.html">
-                <i class="fa-solid fa-user-group"></i> Nosotros
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                <i class="fa-regular fa-user"></i>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
-                <li><a class="dropdown-item" href="#">Registrarse</a></li>
-              </ul>
-            </li>
-          </ul>
-          <div class="d-flex align-items-center gap-3 text-white">
-            <a href="Carrito.html" class="nav-link position-relative">
-              <i class="fa-solid fa-cart-shopping fs-5"></i>
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">0
-              </span>
-            </a>
 
-            <form class="d-flex" role="search" >
-              <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search"/>
-              <button class="btn btn-outline-success" type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </form>
+  <!-- IZQUIERDA: SEARCH -->
+  <div class="nav-left">
+    <form class="search-box" role="search">
+  <button class="btn-search" type="submit">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
 
-          </div>
-        </div>
+  <input class="form-control search-input" 
+         type="search" 
+         placeholder="¿Qué estás buscando?" 
+         aria-label="Search"/>
+</form>
+
+
+    <!-- CARRITO -->
+    <a href="Carrito.html" class="cart-link position-relative">
+      <i class="fa-solid fa-cart-shopping fs-5"></i>
+      <span class="badge rounded-pill bg-success">0</span>
+    </a>
+  </div>
+
+  <!-- DERECHA: MENÚ -->
+  <ul class="navbar-nav nav-right">
+
+    <li class="nav-item">
+      <a class="nav-link" href="Catalogo.html">
+        <i class="fa-brands fa-envira"></i> Catalogo
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="Nosotros.html">
+        <i class="fa-solid fa-user-group"></i> Nosotros
+      </a>
+    </li>
+
+    <!-- PERFIL -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+        <i class="fa-regular fa-user"></i> Cuenta
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
+        <li><a class="dropdown-item" href="#">Registrarse</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</div>
+
       </div>
     </nav>
   </header>
