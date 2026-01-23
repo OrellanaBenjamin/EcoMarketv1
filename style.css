@@ -45,3 +45,45 @@
         margin-top: -24px;
     }
 }
+
+
+body{
+    color: #F4EFEA;
+}
+header{
+    color: #7A8F6A;
+}
+button{
+    background-color: #7A8F6A;
+}
+p{
+    color: #2E2E2E;
+}
+
+h1, h2, li{
+    color: #2E2E2E;
+        
+}
+nav{
+    background-color:#C7D3C0 ;
+    color: aqua;
+}
+footer{
+    background-color:#C7D3C0 ;
+}
+
+.form-control{
+    width: 500px;
+    padding: 1px;
+
+    
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.ikons{
+    position: relative;
+
+    }
