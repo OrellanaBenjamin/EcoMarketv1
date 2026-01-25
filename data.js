@@ -122,6 +122,7 @@ const productos = [{
 },
 ];
 //app.js
+//app hace, que hace una constante contenedor de productos, revisa los productos uno por uno con el foreach, luego crea un elemento html y crea un div, con los col correspondientes para que sea responsiva, luego el col le inserta al html los flex, descripcion, etc y col happend child, toma el div y lo agrega al contenedor de productos.
 const contendor = document.getElementById("contenedor-productos")
 
 productos.forEach(producto => {
@@ -147,6 +148,7 @@ productos.forEach(producto => {
 })
 
 //detail.js
+//detail toma los parametros de la url, obtiene el id del producto, busca el producto en la lista de productos, luego inserta en el html los datos del producto correspondiente.
 const params = new URLSearchParams(window.location.search)
 const id = params.get("id")
 
