@@ -10,13 +10,19 @@ document.addEventListener("visibilitychange", () => {
 
 //Filtro de Productos
 function filtrarProductos(categoria, boton) {
-    document.querySelectorAll('.btn-categoria').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.btn-categoria')
+      .forEach(btn => btn.classList.remove('active'));
+  
     if (boton) boton.classList.add('active');
-
+  
     document.querySelectorAll('.producto').forEach(producto => {
-        producto.style.display = categoria === 'todos' || producto.dataset.categoria === categoria ? 'block' : 'none';
+      if (categoria === 'todos' || producto.dataset.categoria === categoria) {
+        producto.classList.remove('d-none');
+      } else {
+        producto.classList.add('d-none');
+      }
     });
-}
+  }
 
 // Ordenar Productos por Precios
 function ordenarPorPrecio(orden) {
